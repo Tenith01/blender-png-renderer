@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #333333;
+    color: rgb(136, 138, 133);
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="RenderButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>220</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4d91ea;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3f7ab7;
+}
+
+QPushButton:pressed {
+    background-color: #3f7ab7;
+}</string>
+   </property>
+   <property name="text">
+    <string>Render</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="FilePathTest">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>661</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4d91ea;
+}</string>
+   </property>
+   <property name="text">
+    <string>ProjecFiles/test.blender</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Blender File's Location : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>60</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4d91ea;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3f7ab7;
+}
+
+QPushButton:pressed {
+    background-color: #3f7ab7;
+}</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Select Frame :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SelectedFrameTest">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4d91ea;
+}</string>
+   </property>
+   <property name="text">
+    <string>200</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="StartRangeTest">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4d91ea;
+}</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>100</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Output Type :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="ExportTypeSelector">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);
+}
+
+QComboBox:hover {
+    border: 2px solid #4d91ea;
+}
+
+QComboBox:focus {
+    border: 2px solid #4d91ea;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>PNG</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>JPG</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Range :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>To</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EndRangeTest">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4d91ea;
+}</string>
+   </property>
+   <property name="text">
+    <string>35</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>711</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RenderStatLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: rgb(136, 138, 133);
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Copleted 12/40 :</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>711</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RenderStatLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>320</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: rgb(136, 138, 133);
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Rendering......</string>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>RenderButton</zorder>
+  <zorder>FilePathTest</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>label_2</zorder>
+  <zorder>SelectedFrameTest</zorder>
+  <zorder>StartRangeTest</zorder>
+  <zorder>label_3</zorder>
+  <zorder>ExportTypeSelector</zorder>
+  <zorder>label_5</zorder>
+  <zorder>EndRangeTest</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>RenderStatLabel</zorder>
+  <zorder>progressBar_2</zorder>
+  <zorder>RenderStatLabel_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
